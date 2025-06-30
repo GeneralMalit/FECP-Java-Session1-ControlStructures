@@ -1,4 +1,4 @@
-# FECP5-1005-Lab02
+# General Malit
 
 ### Membership Calculator
 
