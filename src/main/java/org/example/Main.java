@@ -6,13 +6,16 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter membership status (Regular, VIP, Premium): ");
-        String memberStatus = sc.nextLine();
-        System.out.print("Enter age: ");
-        int age = sc.nextInt();
+        String memberStatus = sc.nextLine().toLowerCase();
+
+        int age;
+
 
         double price;
         switch(memberStatus){
-            case "Regular":
+            case "regular":
+                System.out.print("Enter age: ");
+                age = sc.nextInt();
                 if(age < 18){
                     price = 50;
                 }else if(age < 65){
@@ -22,7 +25,9 @@ public class Main {
                 }
                 System.out.printf("Price: $%.2f", price);
                 break;
-            case "VIP":
+            case "vip":
+                System.out.print("Enter age: ");
+                age = sc.nextInt();
                 if(age < 18){
                     price = 75;
                 }else if(age < 65){
@@ -32,7 +37,9 @@ public class Main {
                 }
                 System.out.printf("Price: $%.2f", price);
                 break;
-            case "Premium":
+            case "premium":
+                System.out.print("Enter age: ");
+                age = sc.nextInt();
                 if(age < 18){
                     price = 100;
                 }else if(age < 65){
